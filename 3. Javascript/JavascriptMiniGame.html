@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            MiniGame
+        </title>
+    </head>
+
+    <body>
+
+        <p>How many fingers am I holding?</p>
+
+        <p>
+            <input type="text" id="guess">
+            <button id="checkearGuess">Guess!</button>
+        </p>
+
+        <p id="answer"></p>
+
+            <script type="text/javascript">
+                
+                var randomNumber = Math.random();   
+                var chosenNumber  
+                randomNumber = randomNumber*6
+                randomNumber = Math.floor(randomNumber);
+                
+                document.getElementById("checkearGuess").onclick = function(){
+                   
+                    chosenNumber = document.getElementById("guess").value
+
+                    if( chosenNumber == randomNumber)
+                    {
+                        document.getElementById("answer").innerHTML = "Correct! It was " + randomNumber + "!";
+                    } 
+
+                    else if(chosenNumber > randomNumber){
+                        document.getElementById("answer").innerHTML = "Lower!";
+                    }
+
+                    else{
+                        document.getElementById("answer").innerHTML = "Higher!"
+                    }
+                }
+
+            </script>
+
+    </body>
+
+</html>

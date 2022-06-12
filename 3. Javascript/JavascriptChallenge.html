@@ -1,0 +1,41 @@
+<html>
+    <head>
+
+        <title>Javascript Challenge</title>
+
+        <style type="text/css">
+
+            .square{
+                width: 400px;
+                height: 400px;
+                margin: 40px;
+                float: left;
+            }
+
+            #circle{
+                background-color: red;
+                border-radius: 50%;
+            }
+
+        </style>
+    
+    </head>
+
+    <body>
+        
+        <div id="circle" class="square"></div>
+
+        <!-- <button id="buttonC">Change!</button> -->
+
+        <script type="text/javascript">
+
+            document.getElementById("circle").onclick = function(){
+                document.getElementById("circle").style.backgroundColor = "green";
+                // document.getElementById("circle").style.display = "none";
+            }
+
+        </script>
+
+    </body> 
+
+</html>

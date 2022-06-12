@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Styles</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <style type="text/css">
+
+            #circle{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+
+            }
+
+            .square{
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                margin: 10px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="circle"></div>
+
+        <div class="square"></div>
+
+        <p></p>
+
+        <script type="text/javascript">
+            
+            $("div").click(function(){
+                
+                if($(this).attr("id")== "circle")
+                {
+                    $("p").html("You clicked the circle");
+                }
+                else{
+                    $("p").html("You clicked the square");
+                }
+
+            })
+
+        </script>
+
+
+    </body>
+
+</html>

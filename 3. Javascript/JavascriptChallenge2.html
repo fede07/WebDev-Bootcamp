@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>JavascriptChallenge2</title>
+    </head>
+
+    <body>
+
+        <input type="text" id="input">
+
+        <button id="buttonT">Change text!</button>
+
+        <p id="secretText"></p>
+
+        <script type="text/javascript">
+        
+            var textI = "";
+
+            var myArray = new Array();
+
+            myArray[0] = "Pizza";
+
+            myArray[1] = "Chocolate";
+
+            document.getElementById("buttonT").onclick = function(){
+                textI = document.getElementById("input").value;
+
+                document.getElementById("secretText").innerHTML = textI;
+            }
+
+        </script>
+
+    </body>
+</html>
